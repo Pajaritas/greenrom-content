@@ -1,0 +1,41 @@
+name: purge-jsdelivr
+
+# Invalidates the jsDelivr CDN whenever news.json changes on main.
+# Without this, jsDelivr caches the file for up to 12 h (s-maxage=43200)
+# even though the source on raw.githubusercontent updated seconds after
+# the commit. The consumer app uses cache: 'no-cache' on the fetch, so
+# once jsDelivr is fresh, every visitor sees the new feed on the next
+# page load.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'news.json'
+  # Manual fallback if the push trigger gets skipped for any reason.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: purge jsDelivr cache for news.json
+        run: |
+          set -euo pipefail
+          response=$(curl -sS -w '\n%{http_code}' \
+            'https://purge.jsdelivr.net/gh/Pajaritas/greenrom-content@main/news.json')
+          body=$(echo "$response" | head -n -1)
+          code=$(echo "$response" | tail -n 1)
+          echo "HTTP $code"
+          echo "$body"
+          if [ "$code" != "200" ]; then
+            echo "::error::Purge request returned non-200 status"
+            exit 1
+          fi
+          # The API returns finished:true synchronously when CF + FY purged.
+          if ! echo "$body" | grep -q '"status": "finished"'; then
+            echo "::warning::Purge did not complete synchronously — may still be propagating"
+          fi

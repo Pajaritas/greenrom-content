@@ -4,23 +4,12 @@
       "id": "about-news-ticker-live",
       "date": "2026-05-25",
       "tag": "DEVLOG",
-      "title": "NEWS FEED ONLINE",
+      "title": "PROJECT DEPLOYED ON BASE TESTNET",
       "kind": "text",
       "lines": [
-        "ABOUT TAB NOW BROADCASTS LIVE NEWS.",
-        "EDIT NEWS.JSON ON THE CONTENT BRANCH."
+        "PROJECT IS LIVE NOW ON BASE SEPOLIA",
+        "SOON DEPLOYING MAINNET AND GENESIS MINT"
       ]
-    },
-    {
-      "id": "genesis-mint-base-sepolia",
-      "date": "2026-05-20",
-      "tag": "DROP",
-      "title": "GENESIS ON BASE SEPOLIA",
-      "kind": "link",
-      "body": "PUBLIC MINT GATED OFF BY DEFAULT.",
-      "source": "BASESCAN",
-      "url": "https://sepolia.basescan.org/address/0x1684E6D0588E4ce3826b5253E691B1Ec24192e89",
-      "ctaLabel": "▸ INSPECT"
     },
     {
       "id": "whitepaper-doctrine",
@@ -28,7 +17,7 @@
       "tag": "DOCS",
       "title": "WHITEPAPER ALIGNED",
       "kind": "link",
-      "body": "ABOUT COPY NOW MATCHES THE DOCTRINE.",
+      "body": "READ OUR NEW DOCS AT WHITE(OR GREEN)PAPER",
       "source": "DOCS",
       "url": "https://docs.greenrom.xyz",
       "ctaLabel": "▸ READ"

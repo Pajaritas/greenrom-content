@@ -3,7 +3,7 @@
     {
       "id": "about-news-ticker-live",
       "date": "2026-06-01",
-      "tag": "DEVLOG",
+      "tag": "LAUNCHED",
       "title": "PROJECT DEPLOYED ON BASE",
       "kind": "text",
       "lines": [
@@ -21,6 +21,17 @@
       "source": "DOCS",
       "url": "https://docs.greenrom.xyz",
       "ctaLabel": "▸ READ"
+    },
+    {
+      "id": "community-news",
+      "date": "2026-06-01",
+      "tag": "COMMUNITY",
+      "title": "DISCORD IS COMMING SOON!",
+      "kind": "link",
+      "body": "THE DISCORD SERVER IS BEING PREPARED, JOIN NOW.",
+      "source": "DISCORD",
+      "url": "https://discord.com/invite/AmJNMzhhA6",
+      "ctaLabel": "▸ JOIN"
     }
   ]
 }

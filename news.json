@@ -5,11 +5,11 @@
       "date": "2026-06-01",
       "tag": "LAUNCHED",
       "title": "PROJECT DEPLOYED ON BASE",
-      "kind": "text",
-      "lines": [
-        "PROJECT IS LIVE NOW ON BASE",
-        "MINT ALREADY OPEN!"
-      ]
+      "kind": "link",
+      "body": "PROJECT IS LIVE NOW ON BASE AND MINT ALREADY OPEN!",
+      "source": "CARTRIDGE",
+      "url": "https://greenrom.xyz/cartridge",
+      "ctaLabel": "▸ MINT"
     },
     {
       "id": "whitepaper-doctrine",

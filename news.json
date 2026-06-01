@@ -2,13 +2,13 @@
   "items": [
     {
       "id": "about-news-ticker-live",
-      "date": "2026-05-25",
+      "date": "2026-06-01",
       "tag": "DEVLOG",
-      "title": "PROJECT DEPLOYED ON BASE TESTNET",
+      "title": "PROJECT DEPLOYED ON BASE",
       "kind": "text",
       "lines": [
-        "PROJECT IS LIVE NOW ON BASE SEPOLIA",
-        "SOON DEPLOYING MAINNET AND GENESIS MINT"
+        "PROJECT IS LIVE NOW ON BASE",
+        "MINT ALREADY OPEN!"
       ]
     },
     {
